@@ -33,9 +33,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target    = "11.0"
   s.ios.vendored_frameworks  = "**/libtesseract.xcframework"
-  s.pod_target_xcconfig      = {  "OTHER_LDFLAGS" => "-lc++ -lz",
-                                  "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64",
-                               }
-  s.user_target_xcconfig     = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64" }
+  s.pod_target_xcconfig      = {  "OTHER_LDFLAGS" => "-lc++ -lz" }
 
 end
